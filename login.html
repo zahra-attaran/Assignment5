@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            background-image: linear-gradient(#e84393, #0984e3);
+            background-repeat: no-repeat;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            align-content: center;
+            height: 100%;
+        }
+
+        .loginContent {
+            background-color: white;
+            width: 20%;
+            height: 50%;
+        }
+
+        .emailSection,
+        .PasswordSection {
+            background-color: #ced6e0;
+            padding: 10px;
+            margin: auto;
+            width: 75%;
+        }
+
+        .Email,
+        .Password {
+            background-color: transparent;
+            border: none;
+        }
+
+        .RemmemberMe {
+            margin: 20px;
+            text-align: left;
+        }
+
+        .btnLogin {
+            display: block;
+            background-color: #e84393;
+            width: 80%;
+            margin: auto;
+            border: none;
+            color: white;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        label {
+            color: gray;
+            margin-top: 10px;
+        }
+
+        .iconFacebook {
+            color: blue;
+        }
+
+        .btnFaceBook,
+        .btnGoogle {
+            text-decoration: none;
+           
+            border: 1px solid gray;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .btnFaceBook {
+            color: #1e90ff;
+        }
+
+        .btnGoogle {
+            color: black;
+        }
+
+        .btnGoogle img {
+            width: 5%;
+        }
+
+        .btns {
+            margin: 15px;
+        }
+        .notmember , .notmember a{
+            color: gray;
+            margin-top: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="loginContent">
+            <form action="">
+
+  
+            <h1>login</h1>
+            <div>
+                <div class="emailSection">
+                    📧 <input class="Email" type="text" placeholder="Email">
+                </div>
+                <br>
+                <div class="PasswordSection">
+                    🔐 <input class="Password" type="password" placeholder="********">
+                </div>
+            </div>
+            <div class="RemmemberMe">
+                <input  type="checkbox" name="RemmemberMe" id="RemmemberMe">Remmember Me
+            </div>
+           
+            <input type="submit" value="Login" class="btnLogin">
+            <label>Or Login whit</label>
+            <div class="btns">
+                <a class="btnFaceBook" href=""> <i class="fab fa-facebook-square iconFacebook"></i> Facebook
+
+                </a>
+                <a class="btnGoogle" href="">
+                    <img src="google.png" alt="">
+                    Google</a>
+            </div>
+
+<p class="notmember">not member?<a href="#">sign up now</a> </p>
+</form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <title>Document</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css");
+
+        body {
+            margin: 0px;
+        }
+
+        .main {
+            background-color: white;
+            position: relative;
+        }
+
+        .header {
+            direction: rtl;
+            text-align: right;
+        }
+
+        .btnSignIn {
+            /* position: absolute; */
+            background-color: #2694ab;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            border: none;
+            font-size: 16px;
+            width: 80px;
+            height: 40px;
+            margin: 10px;
+        }
+
+        .icon {
+
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .header a {
+            margin: 10px;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+
+
+            height: calc(100vh - 160px);
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+
+        }
+
+        .googleContent {
+            width: 80%;
+        }
+
+        .divimg {
+            width: 100%;
+        }
+
+        /*  */
+        .Google {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin: 50px;
+        }
+
+
+        #cir {
+            display: inline-block;
+            position: relative;
+            border-radius: 50%;
+            width: 30px;
+            border-top: 10px solid #c23616;
+            border-left: 10px #ff9f1a solid;
+            border-bottom: 10px #009432 solid;
+            border-right: 10px transparent solid;
+            height: 30px;
+            margin: 0px !important;
+
+        }
+
+        #rec {
+            position: absolute;
+            bottom: -8px;
+            right: 0px;
+            left: 15px;
+            border-top: 10px solid #0652DD;
+            border-bottom: 10px transparent solid;
+            border-right: 10px #0652DD solid;
+            border-bottom-right-radius: 60%;
+            width: 40%;
+            height: 28%;
+            z-index: 1;
+            
+        }
+
+        .redcir,
+        .redyel,
+        .go {
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+
+        }
+
+        .redcir {
+            border: 5px solid #c23616;
+            margin-top: 20px;
+        }
+
+        .redyel {
+            border: 5px solid #ff9f1a;
+            margin-top: 20px;
+        }
+
+        .g {
+            position: relative;
+            margin-top: 20px;
+            width: 35px;
+        }
+
+        .go {
+            position: absolute;
+            border: 5px solid blue;
+            left: 0;
+        }
+
+        .gI {
+            position: absolute;
+            width: 5px;
+            height: 45px;
+            background-color: blue;
+            left: 25px;
+        }
+
+        .gn {
+            position: absolute;
+            border-radius: 50%;
+            border-bottom: blue 5px solid;
+            border-right: 5px solid transparent;
+            border-left: 5px solid transparent;
+            width: 38px;
+            height: 87px;
+            left: -8px;
+            top: -39px;
+            bottom: -53px;
+        }
+
+        .I {
+
+            width: 5px;
+            height: 46px;
+            background-color: green;
+            left: 25px;
+        }
+
+        .e {
+            margin-top: 17px;
+            position: relative;
+            transform: rotate(370deg);
+            width: 15 px;
+        }
+
+        .eo {
+            position: absolute;
+            border-radius: 50%;
+            border-top: 5px solid #c23616;
+            border-left: 5px #c23616 solid;
+            border-bottom: 5px #c23616 solid;
+            border-right: 5px transparent solid;
+            width: 20px;
+            height: 20px;
+        }
+
+        .eI {
+            position: absolute;
+            width: 5px;
+            height: 25px;
+            background-color: #c23616;
+            left: 13px;
+            top: 0px;
+            transform: rotate(46deg);
+        }
+
+        /*  */
+
+        .content img {
+            display: inline-block;
+        }
+
+        .input {
+            position: relative;
+            display: inline-block;
+            border-radius: 50px;
+            border: 1px solid black;
+            width: 65%;
+            height: 40px;
+
+        }
+
+        .input input {
+            border: none;
+            width: 80%;
+            height: 90%;
+        }
+
+        .input input:focus {
+            border: none;
+        }
+
+        .search {
+            position: absolute;
+            left: 2%;
+            top: 30%;
+
+        }
+
+        .mic {
+            position: absolute;
+            right: 2%;
+            top: 30%;
+            font-size: 24;
+        }
+
+        .mic i {
+            color: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+
+        }
+
+        .btnGoogleSearch,
+        .btnLucky {
+            border: none;
+            background-color: white;
+            margin: 25px;
+            width: 120px;
+            height: 40px;
+        }
+
+        .btnGoogleSearch:hover,
+        .btnLucky:hover {
+            border: 1px solid black;
+            border-radius: 3px;
+            background-color: seashell
+        }
+
+        .sectionFooter {
+            display: flex;
+            width: 100%;
+        }
+
+        .footermenu {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer {
+            position: relative;
+            background-color: #70757a;
+            width: 100%;
+            height: 100px;
+        }
+
+        .left {
+            display: inline-block;
+        }
+
+        .right {
+            display: inline-block;
+        }
+
+        .footermenu a {
+            color: black;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <button class="btnSignIn">Sign In</button>
+            <a class="icon">
+                <i class="bi bi-grid-3x3-gap"></i>
+            </a>
+            <a href="https://www.google.ro/imghp?hl=en&ogbl">
+                Images
+            </a>
+            <a href="https://www.google.com/intl/ro/gmail/about/">
+                Gmail
+            </a>
+        </header>
+        <section class="content">
+            <div class="googleContent">
+                <div class="divimg">
+                    <div class="Google">
+                        <div class="GG">
+                            <div id="cir">
+                                <div id="rec">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="redcir">
+
+                        </div>
+                        <div class="redyel">
+
+                        </div>
+                        <div class="g">
+                            <Div class="go"></Div>
+                            <div class="gI"></div>
+                            <div class="gn"></div>
+                        </div>
+                        <div class="I">
+
+                        </div>
+                        <div class="e">
+                            <div class="eo"></div>
+                            <div class="eI"></div>
+                        </div>
+                    </div>
+                </div>
+                <Div class="input">
+                    <div class="search">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <input type="text">
+                    <div class="mic">
+                        <i class="bi bi-mic-fill"></i>
+                    </div>
+                </Div>
+                <div>
+                    <button class="btnGoogleSearch">Google Search</button>
+                    <button class="btnLucky">I'm Feeling Lucky</button>
+                </div>
+                <div>
+                    Google offered in: <a href="#">Română</a> &nbsp;&nbsp; <a href="#">magyar</a> &nbsp;&nbsp; <a
+                        href="#">Deutsch</a>
+                </div>
+            </div>
+        </section>
+        <footer class="sectionFooter">
+            <div class="footer">
+                <div>Romania </div>
+                <hr>
+                <div class="footermenu">
+                    <div class="left">
+                        <a href="#">About</a> <a href="#">Advertising</a> <a href="#">Business</a> <a href="#"> How
+                            Search works </a>
+                    </div>
+                    <div class="right">
+                        <a href="#">Privacy</a> <a href="#">Terms</a> <a href="#">Settings</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
